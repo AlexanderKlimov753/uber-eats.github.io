@@ -1,0 +1,35 @@
+.breadcrumb {
+    list-style: none;
+    background-color: #eee;
+    position: absolute;
+    width: 100%;
+    display: block !important;
+    padding: 18px 18px 18px 18px;
+  }
+
+ 
+  
+  /* Отображение элементов списка бок о бок */
+  .breadcrumb li {
+    display: inline-block;
+    font-size: 15px;
+  }
+  
+  /* Добавить символ косой черты (/) перед/за каждым элементом списка */
+  .breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Добавить цвет для всех ссылок внутри списка */
+  .breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Добавить цвет на наведении курсора мыши */
+  .breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }

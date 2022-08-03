@@ -1,0 +1,72 @@
+/*Рестораны в Москве start*/
+  
+.restaurants-cards {
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    margin-bottom: 50px;
+  }
+  
+  .restaurants-header {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .restaurant-card {  
+    text-decoration: none;
+    color: #1D1D1D;
+  }
+  
+  .restaurant-card:hover {
+    background-color:#F5F5F5;
+    text-decoration: none;
+    color: #1D1D1D;
+  }
+  
+  .restaurant-card-pic {
+    width: 100%;
+    /*border-radius: var(--border-radius);*/
+    overflow: hidden;
+  }
+  
+  .restaurant-card-pic img {
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  .restaurant-card-pic img:hover {
+    transform: scale(1.03);
+  }
+  
+  .restaurant-name {
+    margin-top: 0.9rem;
+  }
+  
+  .restaurant-type {
+    color: #626262;
+    font-size: 0.875rem;
+  }
+  
+  .restaurant-time {
+    font-size: 0.8125rem;
+  }
+  
+  .restaurant-name,
+  .restaurant-time,
+  .restaurant-type {
+    margin-bottom: 0.35rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .restaurants-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .restaurants-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /*Рестораны в Москве end*/

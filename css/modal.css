@@ -1,0 +1,252 @@
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  
+  
+  
+  .uber {
+      box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+      position: sticky;
+      top: 0px;
+      color: #FFFFFF;
+      background-color: #FFFFFF; 
+      z-index: 100;
+      max-width: 100%;
+    }
+    
+    .uber-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+    }
+    
+    .uber-logo {
+      padding: 13px 0;
+      
+    }
+    
+    .uber-logo:hover{
+      transform: scale(1.07);
+      transition: 0.5s;
+    }
+    
+    .uber-cabinet {
+      display: flex;  
+    }
+    
+    .nav-element {
+      margin: auto 0.9rem;
+      border-radius: 4px;
+      background-color: #FFFFFF;
+    }
+    
+   
+  
+    .link-uber {
+    text-decoration: none;
+    color: #1D1D1D;
+    font-size: 13px;
+    
+    display: flex;
+  align-items: center;
+  text-align: center;
+    
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+    padding: 20px;
+    
+  width: 78px;
+  height: 40px;
+  margin-top: 16px;
+  }
+  
+  .link-uber:hover {
+    text-decoration: none;
+    color: #1D1D1D;
+    font-size: 13px;
+    
+    display: flex;
+  align-items: center;
+  text-align: center;
+    
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+    padding: 20px;
+    box-shadow:0 7px 30px 0 rgba(46, 204, 113);
+    transform: scale(1.07);
+      transition: 0.5s;
+  }
+  
+  
+  /* Начало стилей  */
+  
+  
+  .Window {
+    background:white;
+    color: #1D1D1D;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 99999;
+   
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+   }
+   
+   .Window:target {
+    display: block;
+    pointer-events: auto;
+   }
+   
+   .Window > div {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    background: #f2f2f2;
+    box-shadow: 0px 0px 20px 2px;
+   }
+   
+   .close {
+    color: #aaa;
+      cursor: pointer;
+      font-size: 30px;
+      text-decoration: none;
+      position: absolute;
+      right: 5px;
+      top: 0;
+   }
+   .close:hover { background: #990000; }
+  
+   .close2 {
+    background: #fff;
+      border: #555 solid 1px;
+      border-radius: 3px;
+      cursor: pointer;
+      
+      font-size: 14px;
+      padding: 8px 15px;
+      text-decoration: none;
+      text-align: center;
+      min-width: 60px;
+      position: absolute;
+    margin-top: 170px;
+     left: 110px;
+   }
+  
+   .close2:hover { 
+     background: rgba(46, 204, 113); 
+     transition: 0.5s;
+     text-decoration: none;
+    }
+   /* Окончание стилей */
+  
+  
+  
+  
+   /*Поиск по ресторанам и кухням start*/
+  
+  .search {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-left: 80px;
+    width: 235px;
+    Font-family: Roboto;
+  Font-size: 20px;
+  Line-height: 24px;
+  Line-height: 128%;
+  }
+  
+  .search-input {
+  width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #757575;
+  }
+  
+  /*Поиск по ресторанам и кухням end*/
+  
+  /*Рестораны в Москве start*/
+  
+  .restaurants-cards {
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    margin-bottom: 50px;
+  }
+  
+  .restaurants-header {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .restaurant-card {  
+    text-decoration: none;
+    color: #1D1D1D;
+  }
+  
+  .restaurant-card:hover {
+    background-color:#F5F5F5;
+    text-decoration: none;
+    color: #1D1D1D;
+  }
+  
+  .restaurant-card-pic {
+    width: 100%;
+    /*border-radius: var(--border-radius);*/
+    overflow: hidden;
+  }
+  
+  .restaurant-card-pic img {
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  .restaurant-card-pic img:hover {
+    transform: scale(1.03);
+  }
+  
+  .restaurant-name {
+    margin-top: 0.9rem;
+  }
+  
+  .restaurant-type {
+    color: #626262;
+    font-size: 0.875rem;
+  }
+  
+  .restaurant-time {
+    font-size: 0.8125rem;
+  }
+  
+  .restaurant-name,
+  .restaurant-time,
+  .restaurant-type {
+    margin-bottom: 0.35rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .restaurants-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .restaurants-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  

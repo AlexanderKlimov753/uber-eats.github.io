@@ -1,0 +1,334 @@
+
+@import url("./modal.css");
+@import url("./first\ page.css");
+@import url("./second\ page.css");
+@import url("./breadcrumb.css");
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+  
+  /*uber eats start */
+  
+
+  
+  .uber {
+      box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+      position: sticky;
+      top: 0px;
+      color: #FFFFFF;
+      background-color: #FFFFFF; 
+      z-index: 100;
+      max-width: 100%;
+    }
+    
+    .uber-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+    }
+    
+    .uber-logo {
+      padding: 13px 0;
+      
+    }
+    
+    .uber-logo:hover{
+      transform: scale(1.07);
+      transition: 0.5s;
+    }
+    
+    .uber-cabinet {
+      display: flex;  
+    }
+    
+    .nav-element {
+      margin: auto 0.9rem;
+      border-radius: 4px;
+      background-color: #FFFFFF;
+    }
+    
+   
+  
+    .link-uber {
+    text-decoration: none;
+    color: #1D1D1D;
+    font-size: 13px;
+    
+    display: flex;
+  align-items: center;
+  text-align: center;
+    
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+    padding: 20px;
+    
+  width: 78px;
+  height: 40px;
+  margin-top: 16px;
+  }
+  
+  .link-uber:hover {
+    text-decoration: none;
+    color: #1D1D1D;
+    font-size: 13px;
+    
+    display: flex;
+  align-items: center;
+  text-align: center;
+    
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 2px;
+    padding: 20px;
+    box-shadow:0 7px 30px 0 rgba(46, 204, 113);
+    transform: scale(1.07);
+      transition: 0.5s;
+  }
+  
+  /* Начало стилей  */
+  
+  .Window {
+    background:white;
+    color: #1D1D1D;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 99999;
+   
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+   }
+   
+   .Window:target {
+    display: block;
+    pointer-events: auto;
+   }
+   
+   .Window > div {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    background: #f2f2f2;
+    box-shadow: 0px 0px 20px 2px;
+   }
+   
+   .close {
+    color: #aaa;
+      cursor: pointer;
+      font-size: 30px;
+      text-decoration: none;
+      position: absolute;
+      right: 5px;
+      top: 0;
+   }
+   .close:hover { background: #990000; }
+  
+   .close2 {
+    background: #fff;
+      border: #555 solid 1px;
+      border-radius: 3px;
+      cursor: pointer;
+      
+      font-size: 14px;
+      padding: 8px 15px;
+      text-decoration: none;
+      text-align: center;
+      min-width: 60px;
+      position: absolute;
+    margin-top: 170px;
+     left: 110px;
+   }
+  
+   .close2:hover { 
+     background: rgba(46, 204, 113); 
+     transition: 0.5s;
+     text-decoration: none;
+    }
+  
+  /*uber eats end */
+  
+  /*Поиск по ресторанам и кухням start*/
+  
+  .search {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-left: 80px;
+    width: 235px;
+    Font-family: Roboto;
+  Font-size: 20px;
+  Line-height: 24px;
+  Line-height: 128%;
+  }
+  
+  .search-input {
+  width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #757575;
+  }
+  
+  /*Поиск по ресторанам и кухням end*/
+  
+  
+   /*footer start */
+  
+   .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #262626;
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .footer-logo {
+    padding: 40px 0;
+  }
+  
+  .footer-line{
+    display: block;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+  .footer-links {
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
+    flex-flow: row;
+  }
+  
+  .footer-links-column {
+    flex-basis: 33.3333%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .footer-link {
+    padding: 8px 0;
+    color: #FFFFFF;
+    font-size: 0.8125rem;
+  }
+  
+  .footer-link:hover{
+    transform: scale(1.07);
+    transition: 0.5s;
+  }
+  
+  .footer-legal {
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+  
+  .lang-selector {
+    background: #3B3B3B;
+    
+    color:#FFFFFF;
+    font-size: 0.8rem;
+    padding: 10px 70px 10px 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 12rem;
+  }
+  
+  .lang-selector:focus {
+    outline: none;
+  }
+  
+  .lang-selector-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 24px;
+    margin-left: -16px;
+  }
+  
+  .lang-selector-container > img {
+    position: relative;
+    left: 30px;
+  }
+  
+  .hashtag {
+    display: inline-block;
+    font-size: medium;
+  }
+  
+  .hashtag::before {
+    content: '#';
+    color: #49A144;
+  }
+  
+  .socials-symbols {
+    display: flex;
+   
+    gap: 10px;
+    padding-top: 6px;
+    padding-bottom: 13px;
+    
+    
+  }
+  
+  .footer a {
+    color:white ;
+    text-decoration: none;
+    
+  }
+  
+  .footer a:hover {
+    color:grey ;
+    text-decoration: none;
+    transform: scale(1.07);
+    transition: 0.5s;
+  }
+  
+  /*.footer a:active {
+    color: ;
+    text-decoration: none;
+  }*/
+  
+  .footer-dw-labels {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+     /*.lang-selector {
+      width: 176px;
+    } */
+  }
+  
+  @media screen and (max-width: 576px) {
+    .footer-links {
+      flex-flow: column;
+    }
+    .footer-links-column {
+      flex-basis: 100%;
+    }
+    .footer-legal {
+      flex-flow: column nowrap;
+    }
+  }
+  
+   /*footer end*/
