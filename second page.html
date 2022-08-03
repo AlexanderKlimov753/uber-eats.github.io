@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" /> <!-- кодировка -->
+  <meta name="viewport" content="width = device - width, initial-scale=1.0">
+  <!--"viewport" - область просмотра; "width = device - width - область просмотра всегда равна ширине экрана устройства; initial-scale=1.0" - область просмотра не будет масштабироваться -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <script src="./js/jquery-3.3.1.slim.min.js" defer></script>
+
+  <script src="./js/popper.min.js" async></script>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <script src="./js/bootstrap.min.js" defer></script>
+
+
+  <title>UBER EATS</title>
+
+</head>
+
+<!-- uber eats start -->
+
+<header class="uber">
+
+  <div class="uber-panel container">
+    <div class="uber-logo">
+      <a href="./index.html">
+        <img src="./icon/logo.png" alt="logo" class="header__logo-pic">
+      </a>
+    </div>
+    <div class="uber-cabinet">
+
+      <!--<input type="button" value="Войти"
+              class="nav-element button uber-button">
+            -->
+
+      <a href="#ModalOpen" class="link-uber">Войти</a>
+
+      <!-- cсылка на модальное окно -->
+      <a href="#ModalOpen"></a>
+      <!-- само модальное окно -->
+
+      <div id="ModalOpen" class="Window">
+        <div>
+          <a href="#close" title="Закрыть" class="close">X</a>
+          <a href="#ModalOpen" title="Войти" class="close2">Войти</a>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Логин или номер телефона</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Пароль</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+          </div>
+        </div>
+      </div>
+
+
+
+      <a href="#" class="icon-link nav-element">
+        <img src="./icon/basket.png" alt="Корзина">
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- uber eats end -->
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="./index.html">Рестораны</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Меню</li>
+  </ol>
+</nav>
+
+<!--Трактир «Пушкин» start-->
+
+<div class="traktir">
+  <div class="container">
+    <div class="traktir-info">
+      <h1>Трактир «Пушкин»</h1>
+      <div class="traktir-info-footer">
+        <div class="traktir-type">₽₽₽ • Европейская</div>
+        <div class="traktir-info-footer-time">40 - 50 мин</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Трактир «Пушкин» end-->
+
+<!--Restaurant-nav start-->
+<div class="container">
+  <div class="tabs-block-wrapper">
+
+    <div id="tabs">
+      <div class="tab-btn w65 active" data-btn="1">Закуски</div>
+      <div class="tab-btn w60" data-btn="2">Салаты</div>
+      <div class="tab-btn w40" data-btn="3">Супы</div>
+      <div class="tab-btn w145" data-btn="4">Горячие блюда</div>
+      <div class="tab-btn w65" data-btn="5">Гарниры</div>
+      <div class="tab-btn w65" data-btn="6">Десерты</div>
+    </div>
+    <div id="contents">
+      <div class="content active" data-content="1">
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Сельдь на бородинском хлебе</p>
+            <span class="title_descr">С яйцом и огурцом</span>
+            <p class="item_price">240 ₽</p>
+          </div>
+          <img src="./img/2 стр/Сельдь на бородинском хлебе.png" alt="Сельдь на бородинском хлебе" class="item-img">
+        </div>
+
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Соленья ассорти</p>
+            <span class="title_descr"></span>
+            <p class="item_price">320 ₽</p>
+          </div>
+          <img src="./img/2 стр/Соленья ассорти.png" alt="Соленья ассорти" class="item-img">
+        </div>
+
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Грибы маринованные</p>
+            <span class="title_descr"></span>
+            <p class="item_price">300 ₽</p>
+          </div>
+          <img src="./img/2 стр/Грибы маринованные.png" alt="Грибы маринованные" class="item-img">
+        </div>
+
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Сало домашнее с горчицей</p>
+            <span class="title_descr"></span>
+            <p class="item_price">320 ₽</p>
+          </div>
+          <img src="./img/2 стр/Сало домашнее с горчицей.png" alt="Сало домашнее с горчицей" class="item-img">
+        </div>
+
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Малосольная семга</p>
+            <span class="title_descr"></span>
+            <p class="item_price">390 ₽</p>
+          </div>
+          <img src="./img/2 стр/Малосольная семга.png" alt="Малосольная семга" class="item-img">
+        </div>
+
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Язык говяжий с хреном</p>
+            <span class="title_descr"></span>
+            <p class="item_price">350 ₽</p>
+          </div>
+          <img src="./img/2 стр/Язык говяжий с хреном.png" alt="Язык говяжий с хреном" class="item-img">
+        </div>
+      </div>
+
+      <div class="content" data-content="2">
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Соленья ассорти</p>
+            <span class="title_descr"></span>
+            <p class="item_price">320 ₽</p>
+          </div>
+          <img src="./img/2 стр/Соленья ассорти.png" alt="Соленья ассорти" class="item-img">
+        </div>
+
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Грибы маринованные</p>
+            <span class="title_descr"></span>
+            <p class="item_price">300 ₽</p>
+          </div>
+          <img src="./img/2 стр/Грибы маринованные.png" alt="Грибы маринованные" class="item-img">
+        </div>
+      </div>
+
+      <div class="content" data-content="3">
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Сало домашнее с горчицей</p>
+            <span class="title_descr"></span>
+            <p class="item_price">320 ₽</p>
+          </div>
+          <img src="./img/2 стр/Сало домашнее с горчицей.png" alt="Сало домашнее с горчицей" class="item-img">
+        </div>
+
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Малосольная семга</p>
+            <span class="title_descr"></span>
+            <p class="item_price">390 ₽</p>
+          </div>
+          <img src="./img/2 стр/Малосольная семга.png" alt="Малосольная семга" class="item-img">
+        </div>
+      </div>
+
+      <div class="content" data-content="4">
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Сельдь на бородинском хлебе</p>
+            <span class="title_descr">С яйцом и огурцом</span>
+            <p class="item_price">240 ₽</p>
+          </div>
+          <img src="./img/2 стр/Сельдь на бородинском хлебе.png" alt="Сельдь на бородинском хлебе" class="item-img">
+        </div>
+
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Язык говяжий с хреном</p>
+            <span class="title_descr"></span>
+            <p class="item_price">350 ₽</p>
+          </div>
+          <img src="./img/2 стр/Язык говяжий с хреном.png" alt="Язык говяжий с хреном" class="item-img">
+        </div>
+      </div>
+
+      <div class="content" data-content="5">
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Малосольная семга</p>
+            <span class="title_descr"></span>
+            <p class="item_price">390 ₽</p>
+          </div>
+          <img src="./img/2 стр/Малосольная семга.png" alt="Малосольная семга" class="item-img">
+        </div>
+
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Язык говяжий с хреном</p>
+            <span class="title_descr"></span>
+            <p class="item_price">350 ₽</p>
+          </div>
+          <img src="./img/2 стр/Язык говяжий с хреном.png" alt="Язык говяжий с хреном" class="item-img">
+        </div>
+      </div>
+
+      <div class="content" data-content="6">
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Сало домашнее с горчицей</p>
+            <span class="title_descr"></span>
+            <p class="item_price">320 ₽</p>
+          </div>
+          <img src="./img/2 стр/Сало домашнее с горчицей.png" alt="Сало домашнее с горчицей" class="item-img">
+        </div>
+
+        <div class="content-item">
+          <div class="content-text">
+            <p class="item_title">Сельдь на бородинском хлебе</p>
+            <span class="title_descr">С яйцом и огурцом</span>
+            <p class="item_price">240 ₽</p>
+          </div>
+          <img src="./img/2 стр/Сельдь на бородинском хлебе.png" alt="" class="item-img">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<!--menu end-->
+
+
+<!--footer-->
+
+<div class="footer">
+  <div class="container">
+    <!--<div id="scrollerUnHidePoint"></div>-->
+
+    <img class="footer-logo" src="./icon/white-logo.png" alt="UberEats">
+
+    <hr class="footer-line">
+
+    <div class="footer-links">
+
+      <div class="footer-links-column">
+        <div class="lang-selector-container">
+          <img src="./icon/Shape.png" alt="Language">
+          <select name="country" id="lang-selector" class="lang-selector">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+            <option value="ch">汉语</option>
+          </select>
+        </div>
+        <div class="footer-link">
+          <a href="#" class="hashtag">UberEats</a>
+        </div>
+        <div class="socials-symbols">
+          <a href="#" class="icon-link">
+            <div>
+              <img src="./icon/facebook.png" alt="Facebook">
+            </div>
+          </a>
+          <a href="#" class="icon-link">
+            <div>
+              <img src="./icon/twitter.png" alt="Twitter">
+            </div>
+          </a>
+          <a href="#" class="icon-link">
+            <div>
+              <img src="./icon/instagram.png" alt="Instagram">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-column">
+        <div class="footer-link"><a href="#">Об UberEats</a></div>
+        <div class="footer-link"><a href="#">Станьте партнёром по доставке</a>
+        </div>
+        <div class="footer-link"><a href="#">Станьте партнёром-рестораном</a>
+        </div>
+      </div>
+
+      <div class="footer-links-column">
+        <div class="footer-link"><a href="#">Все города</a></div>
+        <div class="footer-link"><a href="#">Помощь</a></div>
+        <div class="footer-link"><a href="#">Цены</a></div>
+        <div class="footer-link"><a href="#">FAQs</a></div>
+      </div>
+    </div>
+
+    <hr class="footer-line">
+
+    <div class="footer-dw-labels">
+      <a href="#">
+        <img src="./icon/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png" alt="Download On The AppStore">
+      </a>
+      <a href="#"><img src="./icon/en_badge_web_generic-cf6dad406f.png" alt="Get It On Google">
+      </a>
+    </div>
+
+    <hr class="footer-line">
+
+    <div class="footer-legal">
+      <div class="footer-link">
+        <a href="#">© 2017 Uber Technologies Inc.</a>
+      </div>
+      <div class="footer-link">
+        <a href="#">Обработка персональных данных</a>
+      </div>
+      <div class="footer-link">
+        <a href="#">Пользовательское соглашение</a>
+      </div>
+    </div>
+
+    <a class="scroller" id="scroller">
+      <div class="scroller-area"></div>
+    </a>
+
+  </div>
+
+</div>
+
+<script src="./js/tabs.js"></script>
+</body>
+
+</html>

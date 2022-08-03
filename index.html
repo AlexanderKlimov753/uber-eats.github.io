@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" /> <!-- кодировка -->
+  <meta name="viewport" content="width = device - width, initial-scale=1.0">
+  <!--"viewport" - область просмотра; "width = device - width - область просмотра всегда равна ширине экрана устройства; initial-scale=1.0" - область просмотра не будет масштабироваться -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <script src="./js/jquery-3.3.1.slim.min.js" defer></script>
+
+  <script src="./js/popper.min.js" async></script>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <script src="./js/bootstrap.min.js" defer></script>
+
+
+  <title>UBER EATS</title>
+
+</head>
+
+<!-- uber eats start -->
+
+<header class="uber">
+
+  <div class="uber-panel container">
+    <div class="uber-logo">
+      <a href="#">
+        <img src="./icon/logo.png" alt="logo" class="header__logo-pic">
+      </a>
+    </div>
+    <div class="uber-cabinet">
+
+      <!--<input type="button" value="Войти"
+            class="nav-element button uber-button">
+          -->
+
+      <a href="#ModalOpen" class="link-uber">Войти</a>
+
+      <!-- cсылка на модальное окно -->
+      <a href="#ModalOpen"></a>
+      <!-- само модальное окно -->
+
+      <div id="ModalOpen" class="Window">
+        <div>
+          <a href="#close" title="Закрыть" class="close">X</a>
+          <a href="#ModalOpen" title="Войти" class="close2">Войти</a>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Логин или номер телефона</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Пароль</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+          </div>
+        </div>
+      </div>
+
+
+
+      <a href="#" class="icon-link nav-element">
+        <img src="./icon/basket.png" alt="Корзина">
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- uber eats end -->
+
+<!-- Поиск по ресторанам и кухням start -->
+
+<div class="search container">
+
+  <input class="input search-input" type="search" name="search-input-main" id="search-input-main"
+    placeholder="Поиск по ресторанам и кухням">
+
+</div>
+
+
+<!-- Поиск по ресторанам и кухням end -->
+
+<!-- Рестораны в Москве start -->
+
+<div class="container">
+  <h2 class="restaurants-header">Рестораны в Москве</h2>
+
+  <div class="restaurants-cards">
+
+    <a href="./second page.html" class="restaurant-card">
+      <div class="restaurant-card-pic">
+        <img class="transition-fix" src="./img/Макдоналдс — Газетный.png" alt="Макдональдс — Газетный">
+      </div>
+      <div class="restaurant-name">Макдональдс Газетный</div>
+      <div class="restaurant-type">₽₽ • Бургеры</div>
+      <div class="restaurant-time">25 - 35 мин</div>
+    </a>
+
+    <a href="./second page.html" class="restaurant-card">
+      <div class="restaurant-card-pic">
+        <img class="transition-fix" src="./img/DimSum & Co — ЦДМ.png" alt="DimSum & Co — ЦДМ">
+      </div>
+      <div class="restaurant-name">DimSum & Co — ЦДМ</div>
+      <div class="restaurant-type">₽ • Японская • Китайская • Азиатская</div>
+      <div class="restaurant-time">40 - 50 мин</div>
+    </a>
+
+    <a href="./second page.html" class="restaurant-card">
+      <div class="restaurant-card-pic">
+        <img class="transition-fix" src="./img/ДвижОК — Манежная.png" alt="ДвижОК — Манежная">
+      </div>
+      <div class="restaurant-name">ДвижОК — Манежная</div>
+      <div class="restaurant-type">₽ • Американская • Европейская </div>
+      <div class="restaurant-time">35 - 45 мин</div>
+    </a>
+
+    <a href="./second page.html" class="restaurant-card">
+      <div class="restaurant-card-pic">
+        <img class="transition-fix" src="./img/НЯ — NHA.png" alt="НЯ — NHA">
+      </div>
+      <div class="restaurant-name">НЯ — NHA</div>
+      <div class="restaurant-type">₽₽ • Вьетнамская</div>
+      <div class="restaurant-time">30 - 40 мин</div>
+    </a>
+
+    <a href="./second page.html" class="restaurant-card">
+      <div class="restaurant-card-pic">
+        <img class="transition-fix" src="./img/Точка Дзы — Цветной.png" alt="Точка Дзы — Цветной">
+      </div>
+      <div class="restaurant-name">Точка Дзы — Цветной</div>
+      <div class="restaurant-type">₽₽ • Вьетнамская</div>
+      <div class="restaurant-time">40 - 50 мин</div>
+    </a>
+
+    <a href="./second page.html" class="restaurant-card">
+      <div class="restaurant-card-pic">
+        <img class="transition-fix" src="./img/Cinnabon.png" alt="Cinnabon">
+      </div>
+      <div class="restaurant-name">Cinnabon</div>
+      <div class="restaurant-type">₽ • Выпечка • Десерты • Капкейки</div>
+      <div class="restaurant-time">25 - 35 мин</div>
+    </a>
+
+    <a href="./second page.html" class="restaurant-card">
+      <div class="restaurant-card-pic">
+        <img class="transition-fix" src="./img/PIZZELOVE.png" alt="PIZZELOVE">
+      </div>
+      <div class="restaurant-name">PIZZELOVE</div>
+      <div class="restaurant-type">₽₽ • Пицца</div>
+      <div class="restaurant-time">15 - 25 мин</div>
+    </a>
+
+    <a href="./second page.html" class="restaurant-card">
+      <div class="restaurant-card-pic">
+        <img class="transition-fix" src="./img/Zю кафе — Тверская.png" alt="Zю кафе — Тверская">
+      </div>
+      <div class="restaurant-name">Zю кафе — Тверская</div>
+      <div class="restaurant-type">₽₽ • Японская</div>
+      <div class="restaurant-time">25 - 35 мин</div>
+    </a>
+
+    <a href="./second page.html" class="restaurant-card">
+      <div class="restaurant-card-pic">
+        <img class="transition-fix" src="./img/Bar BQ Cafe — Манежная.png"
+          alt="Bar BQ Cafe — Манежная">
+      </div>
+      <div class="restaurant-name">Bar BQ Cafe — Манежная</div>
+      <div class="restaurant-type">₽₽₽ • Европейская</div>
+      <div class="restaurant-time">30 - 40 мин</div>
+    </a>
+
+  </div>
+
+</div>
+
+<!-- Рестораны в Москве end -->
+
+<!-- footer start -->
+
+<div class="footer">
+
+  <!--<div id="scrollerUnHidePoint"></div>-->
+
+  <div class="container">
+    <img class="footer-logo" src="./icon/white-logo.png" alt="UberEats">
+
+    <hr class="footer-line">
+
+    <div class="footer-links">
+
+      <div class="footer-links-column">
+        <div class="lang-selector-container">
+          <img src="./icon/Shape.png" alt="Language">
+          <select name="country" id="lang-selector" class="lang-selector">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+            <option value="ch">汉语</option>
+          </select>
+        </div>
+        <div class="footer-link">
+          <a href="#" class="hashtag">UberEats</a>
+        </div>
+        <div class="socials-symbols">
+          <a href="#" class="icon-link">
+            <div>
+              <img src="./icon/facebook.png" alt="Facebook">
+            </div>
+          </a>
+          <a href="#" class="icon-link">
+            <div>
+              <img src="./icon/twitter.png" alt="Twitter">
+            </div>
+          </a>
+          <a href="#" class="icon-link">
+            <div>
+              <img src="./icon/instagram.png" alt="Instagram">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-column">
+        <div class="footer-link"><a href="#">Об UberEats</a></div>
+        <div class="footer-link"><a href="#">Станьте партнёром по доставке</a>
+        </div>
+        <div class="footer-link"><a href="#">Станьте партнёром-рестораном</a>
+        </div>
+      </div>
+
+      <div class="footer-links-column">
+        <div class="footer-link"><a href="#">Все города</a></div>
+        <div class="footer-link"><a href="#">Помощь</a></div>
+        <div class="footer-link"><a href="#">Цены</a></div>
+        <div class="footer-link"><a href="#">FAQs</a></div>
+      </div>
+    </div>
+
+    <hr class="footer-line">
+
+    <div class="footer-dw-labels">
+      <a href="#">
+        <img src="./icon/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png"
+          alt="Download On The AppStore">
+      </a>
+      <a href="#"><img src="./icon/en_badge_web_generic-cf6dad406f.png" alt="Get It On Google">
+      </a>
+    </div>
+
+    <hr class="footer-line">
+
+    <div class="footer-legal">
+      <div class="footer-link">
+        <a href="#">© 2017 Uber Technologies Inc.</a>
+      </div>
+      <div class="footer-link">
+        <a href="#">Обработка персональных данных</a>
+      </div>
+      <div class="footer-link">
+        <a href="#">Пользовательское соглашение</a>
+      </div>
+    </div>
+
+    <a class="scroller" id="scroller">
+      <div class="scroller-area"></div>
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+
+
+
+</html>
+
+<!-- footer end -->
